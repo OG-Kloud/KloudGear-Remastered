@@ -1,16 +1,21 @@
 [
 {
   "modid": "hexxitgear",
-  "name": "Hexxit Gear Revisted",
-  "description": "Special gear designed to work in conjuction with the Hexxit modpack.",
-  "version": "x.y.z",
-  "mcversion": "1.12.1",
-  "url": "https://mods.io/mods/1128-hexxit-gear-revisited",
-  "updateUrl": "",
-  "authorList": ["Kloud, sct, CheapShot"],
-  "credits": "The Forge and FML guys, for making the Forge and FML libray's respectivly",
-  "logoFile": "hexxitgear.png",
-  "screenshots": [],
-  "dependencies": []
+  "name": "Kloud Gear Remastered",
+  "description": "Special gear designed to provide an advanced endgame with no overly complex machines or electronics.",
+    "mcversion": "1.12.2",
+    "version": "1.0",
+    "url": "https://kloudspaceproductions.net",
+    "updateUrl": "",
+    "authors": [
+        "sct",
+    ],
+    "credits": "By sct. Artwork by Cheapshot. Updated by Kloud.",
+    "logoFile": "/hexxitgear.png",
+    "screenshots": [
+    ],
+    "parent":"",
+    "dependencies": [
+    ]
 }
 ]

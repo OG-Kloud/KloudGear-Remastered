@@ -18,6 +18,7 @@ public class ItemArmorBase extends ItemArmor implements IModelProvider{
 		this.name = name;
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
+		this.setCreativeTab(KG.CreativeTab.kgTab);
 	}
 
 	@Override

@@ -8,7 +8,7 @@ import net.minecraft.potion.PotionEffect;
 
 public class KGUtils {
 	
-	private static final int duration = 21;
+	private static final int duration = 40;
 	
 	public static void init() {
 		
@@ -33,7 +33,7 @@ public class KGUtils {
 	public static List<PotionEffect> getThiefEffects() {
 		List<PotionEffect> thiefEffects = new ArrayList<PotionEffect>();
 		thiefEffects.add(new PotionEffect(MobEffects.SPEED, duration, 0));
-		thiefEffects.add(new PotionEffect(MobEffects.NIGHT_VISION, 200, 0));
+		thiefEffects.add(new PotionEffect(MobEffects.NIGHT_VISION, duration * 10, 0));
 		thiefEffects.add(new PotionEffect(MobEffects.STRENGTH, duration, 0));
 		return thiefEffects;
 	}

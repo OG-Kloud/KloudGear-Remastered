@@ -27,15 +27,15 @@ public class ScaleHelm extends ScaleArmor {
 	public String getArmorTexture(ItemStack stack, Entity entity, EntityEquipmentSlot slot, String type) {
 		return KG.ID + ":armor/scalehelm.png";
 	}
-// ./gradlew runClient
+	
 	@Override
 	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot,
 			ModelBiped defaultModel) {
 		
 		ModelBiped armorModel = KG.proxy.getArmorModel(0);
 		
-		armorModel.bipedHead.showModel = armorSlot == EntityEquipmentSlot.HEAD;
-		armorModel.bipedHeadwear.showModel = armorSlot == EntityEquipmentSlot.HEAD;
+//		armorModel.bipedHead.showModel = armorSlot == EntityEquipmentSlot.HEAD;
+//		armorModel.bipedHeadwear.showModel = armorSlot == EntityEquipmentSlot.HEAD;
 		armorModel.bipedBody.showModel = (armorSlot == EntityEquipmentSlot.CHEST)
 				|| (armorSlot == EntityEquipmentSlot.CHEST);
 		armorModel.bipedRightArm.showModel = armorSlot == EntityEquipmentSlot.CHEST;

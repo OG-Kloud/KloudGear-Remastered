@@ -1,8 +1,11 @@
 package kloud;
 
+import kloud.item.ItemHandler;
 import kloud.proxy.Common;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -10,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = KG.ID, name = KG.NAME, version = KG.VER)
 public class KG {
-	public static final String ID = "hexxitgear", NAME = "Hexxit Gear Revisited", VER = "x.y.z-1.12.1";
+	public static final String ID = "hexxitgear", NAME = "Hexxit Gear Revisited", VER = "@Version";
 	
 	@Mod.Instance
 	public static KG instance;
@@ -33,13 +36,21 @@ public class KG {
 				20, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 5.0F);
 	}
 	
-	/*
-	 *@SubscribeEvent
-	public void login(PlayerLoggedInEvent e) {
-		book = new Book("Kloud", "The Dawning");
-		book.addPage("Welcome... to Modulation\nThe world of change is upon us.");
-		ItemStack booklet = book.get();
-		e.player.inventory.addItemStackToInventory(booklet);
-	}*/
+	public static class CreativeTab {
+		public static CreativeTabs kgTab = new KGTab("kloudgear");
+	}
+	
+	private static class KGTab extends CreativeTabs {
+
+		public KGTab(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ItemHandler.tribalHelm);
+		}
+		
+	}
 
 }

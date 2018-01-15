@@ -64,7 +64,8 @@ private static Map<ResourceLocation, Book> bookRegistry = new HashMap<ResourceLo
 	 *	book = new Book("Kloud", "The Dawning");
 		book.addPage("Welcome... to Modulation\nThe world of change is upon us.");
 		ItemStack booklet = book.get();
-		e.player.inventory.addItemStackToInventory(booklet);*/
+		e.player.inventory.addItemStackToInventory(booklet);
+	*/
 	
 	
 	

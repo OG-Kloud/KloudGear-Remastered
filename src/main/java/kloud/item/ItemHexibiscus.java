@@ -22,6 +22,7 @@ public class ItemHexibiscus extends Item implements IModelProvider{
 		this.name = n;
 		this.setRegistryName(name);
 		this.setUnlocalizedName(name);
+		this.setCreativeTab(KG.CreativeTab.kgTab);
 	}
 	
 	@Override

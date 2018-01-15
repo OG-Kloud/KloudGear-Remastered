@@ -23,6 +23,7 @@ public class BookHandler {
 				"the remnents of the anciant gems for centuries,\n" +
 				"but to no avail there seems to be no evidence\n" +
 				"that the knowlege prior will ever be recovered.\n");
+		BookRegistry.addPage(loreBookResource, "");
 		
 		BookRegistry.addPage(loreBookResource, "Coming Soon!");
 	}

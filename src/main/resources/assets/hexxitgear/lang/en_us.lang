@@ -2,7 +2,7 @@
 item.scalehelmet.name=Scale Helmet
 item.scalechest.name=Scale Chestplate
 item.scalelegs.name=Scale Leggings
-item.scalebootes.name=Scale Boots
+item.scaleboots.name=Scale Boots
 item.tribalhelmet.name=Tribal Skull
 item.tribalchest.name=Lether Tunic
 item.triballegs.name=Lether Leggings
@@ -15,3 +15,4 @@ item.hexibiscus.name=Hexibiscus Flower
 item.hexessence.name=Hexical Essence
 item.hexdiamond.name=Hexical Diamond
 tile.hexibiscus.name=Hexibiscus Flower
+itemGroup.kloudgear=Kloud Gear Remastered
